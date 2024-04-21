@@ -2,7 +2,6 @@ package com.rohan.taskmanager.controller;
 
 import com.rohan.taskmanager.model.Task;
 import com.rohan.taskmanager.service.TaskService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

@@ -3,11 +3,9 @@ package com.rohan.taskmanager.service;
 
 import com.rohan.taskmanager.model.Task;
 import com.rohan.taskmanager.repository.TaskRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.UUID;
 
 @Service
 public class TaskService {
