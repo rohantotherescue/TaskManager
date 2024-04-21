@@ -12,11 +12,15 @@ import java.util.UUID;
 @Service
 public class TaskService {
 
-    @Autowired
-    private TaskRepository repository;
+
+    private final TaskRepository repository;
 
     //CRUD  CREATE , READ , UPDATE , DELETE
 
+
+    public TaskService(TaskRepository repository) {
+        this.repository = repository;
+    }
 
     public Task addTask(Task task) {
         task.setTaskId(UUID.randomUUID().toString().split("-")[0]);
