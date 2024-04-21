@@ -23,7 +23,7 @@ public class TaskService {
     }
 
     public Task addTask(Task task) {
-        task.setTaskId(UUID.randomUUID().toString().split("-")[0]);
+//        task.setTaskId(UUID.randomUUID().toString().split("-")[0]);
         return repository.save(task);
     }
 
