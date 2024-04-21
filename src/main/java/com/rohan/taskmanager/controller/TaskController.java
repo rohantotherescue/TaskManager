@@ -17,9 +17,6 @@ public class TaskController {
         this.service = service;
     }
 
-//    @Autowired
-//    private TaskService service;
-
     @PostMapping("/tasks")
     @ResponseStatus(HttpStatus.CREATED)
     public Task createTask(@RequestBody Task task){
